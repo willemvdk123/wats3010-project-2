@@ -50,3 +50,74 @@ figcaption {
 p {
   font-family: var(--font-serif-text);
 }
+/* brand */
+.brand a {
+    color: var(--brand-color);
+    text-decoration: none;
+  }
+
+  /* layout */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+  .single-col-container>*,
+.container>* {
+  color: var(--main-text-color);
+  line-height: 1.5;
+  background: var(--container-bg-color);
+}
+
+.single-col-container nav,
+.container nav {
+  padding: 10px;
+}
+
+.container>aside,
+section {
+  padding: 20px;
+}
+
+footer {
+  padding: 0 10px;
+}
+
+/* nav styles */
+.single-col-container nav,
+.container nav {
+  background-color: var(--nav-bg-color);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--nav-text-color);
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+a.toggle {
+  text-decoration: none;
+}
+
+nav .active {
+  background-color: var(--nav-hover-color);
+  height: 50px;
+  line-height: 50px;
+}
+
+nav li {
+  text-align: center;
+}
+
+nav .active a {
+  color: var(--nav-active);
+}
